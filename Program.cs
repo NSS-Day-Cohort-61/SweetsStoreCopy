@@ -1,5 +1,7 @@
 ﻿using System;
+
 using System.Collections.Generic;
+
 
 namespace Products
 {
@@ -11,6 +13,14 @@ namespace Products
                 Step 1:
                     Create at least one instance of each kind of candy
              */
+             Lollipop lolly = new Lollipop();
+             lolly.Name = "blue raz muhtazz";
+             Console.WriteLine($"{lolly.Name}");
+
+             Gummy gumgum = new Gummy();
+             gumgum.Name = "gumby"; 
+             Console.WriteLine($"{gumgum.Name}");
+
 
 
 
