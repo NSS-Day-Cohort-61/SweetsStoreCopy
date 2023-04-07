@@ -1,4 +1,6 @@
-﻿namespace Products
+﻿using System;
+
+namespace Products
 {
     class Program
     {
@@ -8,6 +10,14 @@
                 Step 1:
                     Create at least one instance of each kind of candy
              */
+             Lollipop lolly = new Lollipop();
+             lolly.Name = "blue raz muhtazz";
+             Console.WriteLine($"{lolly.Name}");
+
+             Gummy gumgum = new Gummy();
+             gumgum.Name = "gumby"; 
+             Console.WriteLine($"{gumgum.Name}");
+
 
 
 
