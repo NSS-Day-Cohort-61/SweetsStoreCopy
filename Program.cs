@@ -21,6 +21,10 @@ namespace Products
              gumgum.Name = "gumby"; 
              Console.WriteLine($"{gumgum.Name}");
 
+             Gummy gummyWorms = new Gummy();
+             CandyBar snickers = new CandyBar();
+             Cake RedVelvetCake = new Cake();
+
 
 
 
