@@ -1,6 +1,6 @@
 namespace Products
 {
-    public class Cake
+    public class Cake : IBakedGoods
     {
         public double? Price { get; set; }
 
