@@ -1,6 +1,8 @@
+using System.Collections.Generic;
+
 namespace Products
 {
-    public class Pie
+    public class Pie : IBakedGoods
     {
         public double? Price { get; set; }
 
@@ -11,6 +13,7 @@ namespace Products
         public int? BakingTemperature { get; set; }
 
         public string? Filling { get; set; }
+        public List<string> IngredientsList { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
 
         public void Slice()
         {

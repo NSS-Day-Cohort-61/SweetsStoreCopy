@@ -1,4 +1,7 @@
-﻿namespace Products
+﻿using System;
+using System.Collections.Generic;
+
+namespace Products
 {
     class Program
     {
@@ -35,6 +38,17 @@
 
              Licorice twisters = new Licorice();
              Sours warheads = new Sours();
+
+             List<IBakedGoods> BakedList = new List<IBakedGoods>(); 
+             BakedList.Add(PecanPie);
+             BakedList.Add(greenMacaroon);
+             BakedList.Add(yellowMacaroon);
+             BakedList.Add(ReesesPie);
+
+             foreach(var b in BakedList)
+             {
+                Console.WriteLine($"{b}");
+             }
 
 
         }

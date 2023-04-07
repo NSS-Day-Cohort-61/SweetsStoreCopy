@@ -1,6 +1,8 @@
+using System.Collections.Generic;
+
 namespace Products
 {
-    public class Macaroon
+    public class Macaroon : IBakedGoods
     {
         public int? BakingTemperature { get; set; }
 
@@ -11,6 +13,7 @@ namespace Products
         public string? Name { get; set; }
 
         public string? Filling { get; set; }
+        public List<string> IngredientsList { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
 
         public void AddFilling()
         {
